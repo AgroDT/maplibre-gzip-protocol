@@ -21,18 +21,17 @@ See a full [example](./example).
     <script type="importmap">
       {
         "imports": {
-          "maplibre-gl": "https://unpkg.com/maplibre-gl",
-          "@agrodt/maplibre-gzip-protocol": "https://unpkg.com/@agrodt/maplibre-gzip-protocol"
+          "@agrodt/maplibre-gzip-protocol": "https://unpkg.com/@agrodt/maplibre-gzip-protocol/dist/index.js"
         }
       }
     </script>
+    <script src='https://unpkg.com/maplibre-gl'></script>
     <script type="module">
-      import {Map, addProtocol} from 'maplibre-gl';
       import {gzipProtocol} from '@agrodt/maplibre-gzip-protocol';
 
-      addProtocol('gzip', gzipProtocol);
+      maplibregl.addProtocol('gzip', gzipProtocol);
 
-      new Map({
+      new maplibregl.Map({
         container: 'map',
         center: [40.31165385, 56.46397425],
         zoom: 11,
