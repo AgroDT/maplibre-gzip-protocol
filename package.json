@@ -1,0 +1,33 @@
+{
+  "name": "@agrodt/maplibre-gzip-protocol",
+  "version": "0.1.1",
+  "description": "A MapLibre plugin to allow loading of statically gzipped sources",
+  "keywords": [],
+  "author": "Petr Tsymbarovich <petr@tsymbarovich.ru>",
+  "homepage": "https://github.com/AgroDT/maplibre-gzip-protocol",
+  "bugs": {
+    "url": "https://github.com/AgroDT/maplibre-gzip-protocol/issues"
+  },
+  "license": "MIT",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepare": "tsc"
+  },
+  "peerDependencies": {
+    "maplibre-gl": "^5.1.0"
+  },
+  "devDependencies": {
+    "maplibre-gl": "^5.1.0",
+    "typescript": "^5.7.3"
+  }
+}
