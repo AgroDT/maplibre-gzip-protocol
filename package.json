@@ -4,9 +4,12 @@
   "description": "A MapLibre plugin to allow loading of statically gzipped sources",
   "keywords": [],
   "author": "Petr Tsymbarovich <petr@tsymbarovich.ru>",
-  "homepage": "https://github.com/AgroDT/maplibre-gzip-protocol",
   "bugs": {
     "url": "https://github.com/AgroDT/maplibre-gzip-protocol/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AgroDT/eslint-config.git"
   },
   "license": "MIT",
   "type": "module",
