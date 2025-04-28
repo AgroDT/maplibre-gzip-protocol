@@ -26,15 +26,15 @@ jobs:
         with:
           version: 10
           
+      - name: Generate pnpm-lock if missing
+        run: test -f pnpm-lock.yaml || pnpm install --lockfile-only
+
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
           registry-url: 'https://registry.npmjs.org/'
           cache: 'pnpm'
-
-      - name: Generate pnpm-lock if missing
-        run: test -f pnpm-lock.yaml || pnpm install --lockfile-only
 
       - name: Install dependencies
         run: pnpm install
