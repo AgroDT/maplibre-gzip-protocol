@@ -1,6 +1,6 @@
 {
   "name": "@agrodt/maplibre-gzip-protocol",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A MapLibre plugin to allow loading of statically gzipped sources",
   "keywords": [],
   "author": "Petr Tsymbarovich <petr@tsymbarovich.ru>",
